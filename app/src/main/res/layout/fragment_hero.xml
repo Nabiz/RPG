@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HeroFragment">
+    <data>
+        <variable
+            name="heroViewModel"
+            type="com.example.rpg.hero.HeroViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="200dp"
+            android:maxHeight="200dp"
+            android:src="@drawable/man"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:maxWidth="200dp"
+            android:text="@={heroViewModel.hero.name}"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/stats"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="KOZAK I NISZCZYCIEL" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/level_up"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stats" />
+
+        <TextView
+            android:id="@+id/stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@{@string/stats(heroViewModel.hero.vit, heroViewModel.hero.str, heroViewModel.hero.dex, heroViewModel.hero.inte, heroViewModel.hero.luck)}"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:text="VIT: 8   STR: 3   DEX: 3   INT: 5   LUCK: 6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

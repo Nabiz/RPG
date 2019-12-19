@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Rpg</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stats">VIT: %d&#160;&#160;STR: %d&#160;&#160;DEX: %d"\n"INT: %d&#160;&#160;LUCK: %d</string>
+    <string name="name">Name</string>
+    <string name="warrior_base">Warrior (VIT 4, STR 5, DEX 3, INT 2)</string>
+    <string name="mage_base">Mage (VIT 3, STR 2, DEX 3, INT 6)</string>
+    <string name="rogue_base">Rogue (VIT 3, STR 3, DEX 5, INT 3)</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="create_hero">Create HERO!!!</string>
+    <string name="hero">Hero</string>
+    <string name="credits">Credits</string>
+    <string name="dawid_gwizdz">Dawid Gwiżdż</string>
+    <string name="used_technics">Used technics:"\n"
+        * data-binding"\n"
+        * navigation"\n"
+        * safe args"\n"
+        * live data"\n"
+        * view model
+    </string>
+    <string name="new_hero">Create hero</string>
+    <string name="level_up">Level UP</string>
+    <string name="test">Test</string>
+    <string name="easy_str">Easy STR</string>
+    <string name="mid_str">MID STR</string>
+    <string name="hard_str">Hard STR</string>
+    <string name="easy_dex">Easy DEX</string>
+    <string name="mid_dex">Mid DEX</string>
+    <string name="hard_dex">Hard DEX</string>
+    <string name="easy_int">Easy INT</string>
+    <string name="mid_int">Mid INT</string>
+    <string name="hard_int">Hard INT</string>
+    <string name="test_result">TEST RESULT</string>
+    <string name="chose_test">Chose Test:</string>
+</resources>

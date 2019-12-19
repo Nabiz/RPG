@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/heroFragment">
+
+    <fragment
+        android:id="@+id/newHeroFragment"
+        android:name="com.example.rpg.NewHeroFragment"
+        android:label="New Hero">
+        <action
+            android:id="@+id/action_newHeroFragment_to_heroFragment"
+            app:destination="@+id/heroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/heroFragment"
+        android:name="com.example.rpg.HeroFragment"
+        android:label="Hero"
+        tools:layout="@layout/fragment_hero">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="sex"
+            app:argType="boolean" />
+        <argument
+            android:name="proffesion"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/creditsFragment"
+        android:name="com.example.rpg.CreditsFragment"
+        android:label="Credits" />
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.example.rpg.TestFragment"
+        android:label="Test" />
+</navigation>
